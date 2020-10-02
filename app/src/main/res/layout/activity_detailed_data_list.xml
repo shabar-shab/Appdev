@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedDataList">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/owner_name_detailed_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="0dp"
+                android:text="@string/owner_name"/>
+            <TextView
+                android:id="@+id/phone_number_detailed_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/prompt"
+                android:padding="0dp" />
+            <TextView
+                android:id="@+id/applications_status_detailed_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="2dp"
+                android:text="@string/application_status"/>
+            <TextView
+                android:id="@+id/property_name_detailed_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="0dp"
+                />
+            <TextView
+                android:id="@+id/city_editText_detailed_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"
+                android:padding="0dp"
+                />
+            <TextView
+                android:id="@+id/locality_editText_detailed_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="0dp"
+                />
+
+            <TextView
+                android:id="@+id/preffered_language_detailed_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="0dp"
+                />
+
+
+            <Button
+                android:id="@+id/callOwner"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/call_owner"
+                android:layout_marginRight="50dp"
+                android:background="#1aa260"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:entries="@array/status"
+                android:prompt="@string/prompt"
+               />
+
+            <EditText
+                android:id="@+id/commentBox"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textAutoCorrect"
+                android:textAlignment="center"
+                android:hint="comments"
+                android:padding="24dp"/>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:background="#4285F4"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

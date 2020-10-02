@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">App Dev</string>
+    <string name="data_entry">Data Entry</string>
+    <string name="data_validation">Data Validation</string>
+    <string name="new_submit_data_entry">Submit New Data Entry</string>
+    <string name="dashboard">DASHBOARD</string>
+    <string name="applications_submitted">Applications Submitted</string>
+    <string name="pending_approval">Pending Approval</string>
+    <string name="applications_approved">Applications Approved</string>
+    <string name="applications_rejected">Applications Rejected</string>
+    <string name="lead_generated">Lead generated</string>
+    <string name="data_entry_mobileNumber">Enter Client Mobile Number</string>
+    <string name="validate_mobileNumber">Validate Mobile Number</string>
+    <string name="property_name">Property/PG Name</string>
+    <string name="city_name">City</string>
+    <string name="Area_locality">Area/Locality Number</string>
+    <string name="owner_name">Owner Name(optional)</string>
+    <string name="preferedLanguage">Prefered Language (Optional)</string>
+    <string name="submit_button">Submit</string>
+    <string name="popu_message">This Client already exists</string>
+    <string name="application_status">Application Status</string>
+    <string name="prompt">Change Status</string>
+    <string name="call_owner">Call Owner</string>
+    <string-array name="status">
+        <item>Pending</item>
+        <item>Approved</item>
+        <item>Rejected</item>
+    </string-array>
+
+</resources>
