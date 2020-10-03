@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
             //in this case the code will be null
             //so user has to manually enter the code
             if (code != null) {
-                mobileNumber.setText(code);
+                otpNumber.setText(code);
                 //verifying the code
                 verifyVerificationCode(code);
             }
@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
             //signing the user
             signInWithPhoneAuthCredential(credential);
         }catch (Exception e){
-            Toast toast = Toast.makeText(this, "Mobile Number is invalid OR\nVerification Code is wrong", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this, "Mobile Number is invalid", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER,0,0);
             toast.show();
         }
