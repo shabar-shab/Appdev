@@ -87,6 +87,11 @@ public class MainActivity extends AppCompatActivity {
                     otpNumber.requestFocus();
                     return;
                 }
+                if(mobileNumber.getText().toString().trim().isEmpty() || mobileNumber.getText().toString().trim().length() !=10){
+                    mobileNumber.setError("Enter a valid mobile number");
+                    mobileNumber.requestFocus();
+                    return;
+                }
                 ProgressBar progressBar =(ProgressBar)findViewById(R.id.progressbar);
                 progressBar.setVisibility(View.VISIBLE);
                  progressBar = new ProgressBar(MainActivity.this);
@@ -150,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
             //signing the user
             signInWithPhoneAuthCredential(credential);
         }catch (Exception e){
-            Toast toast = Toast.makeText(this, "Mobile Number is invalid", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this, "Mobile Number is invalid OR\n OTP not generated", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER,0,0);
             toast.show();
         }
